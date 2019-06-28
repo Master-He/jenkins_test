@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  flask:
+    build: .
+    ports:
+     - "5000:5000"
+    image: "jenkins_docker_flask_web_v1"
+
+  redis:
+    image: "redis:alpine"
