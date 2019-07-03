@@ -16,3 +16,6 @@ source .env
 export HYPERMINER_VERSION=${HYPERMINER_VERSION}
 export MLSTUDIOSDK_PACKAGE_DATA=${MLSTUDIOSDK_PACKAGE_DATA}
 env
+source deactivate
+conda remove -y -n hm --all
+pip list
