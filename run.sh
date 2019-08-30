@@ -1,1 +1,3 @@
-python ./flask/app.py
+#!/bin/bash
+
+docker-compose up -d flask

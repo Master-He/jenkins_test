@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python3 flask/app.py'
+                sh './build.sh'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh './run.sh'
             }
         }
     }
