@@ -7,4 +7,5 @@ if [[ "$(docker volume ls | grep redis-volume)" == "" ]]; then
 fi
 
 
+docker-compose down
 docker-compose up -d flask
