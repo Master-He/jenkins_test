@@ -5,6 +5,8 @@ pipeline {
             steps {
                 sh 'echo *****=====whoami=====*****'
                 sh 'whoami'
+                sh 'echo *****=====prepare env=====*****'
+                sh 'echo ${USER_TYPE}'
             }
         }
         stage('build') {
